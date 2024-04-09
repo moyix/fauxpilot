@@ -14,7 +14,7 @@ You'll need:
 * Docker
 * `docker compose` >= 1.28
 * An NVIDIA GPU with Compute Capability >= 6.0 and enough VRAM to run the model you want.
-* [`nvidia-docker`](https://github.com/NVIDIA/nvidia-docker)
+* [`nvidia-container-toolkit`](https://github.com/NVIDIA/nvidia-container-toolkit)
 * `curl` and `zstd` for downloading and unpacking the models.
 
 Note that the VRAM requirements listed by `setup.sh` are *total* -- if you have multiple GPUs, you can split the model across them. So, if you have two NVIDIA RTX 3080 GPUs, you *should* be able to run the 6B model by putting half on each GPU.
